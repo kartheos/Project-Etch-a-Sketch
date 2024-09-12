@@ -1,0 +1,124 @@
+@font-face {
+    font-family:"Miss" ;
+    src: url(./Miss16Bit-XGEYG.ttf) format('truetype');
+}
+
+body{
+    background-image:url(./the-starry-night-painting-by-vincent-van-gogh-uhd-4k-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  linear-gradient(rgba(96, 79, 252, 0.082), white);;
+
+}
+
+.frame{
+    background-color: red;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10%;
+
+}
+
+.canva {
+    width: 80%;
+    height: 80%;
+    display: grid;
+    background-color: white;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+.canva:hover {
+    cursor: pointer;
+  }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    min-height: 300px;
+    width: 60vw;
+    height: 60vw;
+    max-width: 600px;
+    max-height: 600px;
+  }
+.title {
+    display: flex;
+    justify-content: center;
+    font-family: "Miss";
+  }
+.buttons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+ button {
+    padding: 0.3em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 2em;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.2s;
+  }
+ 
+  button:hover {
+    cursor: pointer;
+  }
+
+  input {
+    width: 65px;
+  }
+  
+  .mode {
+    margin-bottom: 5px;
+  }
+  .error {
+    display: none;
+  }
+
+  .blackButton {
+    background-color: black;
+    color: white;
+  }
+  .blackButton:hover {
+    background-color: white;
+    color: black;
+  }
+  .grayButton {
+    background-color: rgba(128, 128, 128, 0.411);
+    color: black;
+  }
+  .grayButton:hover {
+    background-color: rgb(95, 95, 95);
+    color: white;
+  }
+  .rainbowButton {
+    background: linear-gradient(0.25turn, #f65cfc, #ebf8e1, #583cf6);
+  }
+  .rainbowButton:hover {
+    background: linear-gradient(0.25turn, #20ff02, #ebf8e1, #aecc03);
+  }
+  .erasorButton {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  .erasorButton:hover {
+    background-color: white;
+    color: rgb(255, 255, 255);
+  }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js.js" defer></script>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Project: Etch-a-Sketch</title>
+    </head>
+
+<body>
+
+    <div class="container">
+        <div class="frame">
+          <div class="title"><h1>SketchPad</h1></div>
+        <div>
+            <input type="text" placeholder="Canva size"  onchange="changeSize(this.value)">
+            <button>Set the canvas size to start drawing</button>
+            <div class="error">For generating the canva, the input must be between 2 and 100</div>
+            <div class="mode">Mode: Coloring</div>
+        </div>
+        <div class="content">
+            <div class="canva"></div>
+            <div class="buttons">
+                <button class="blackButton"  onclick="changeColor('black')">Black</button>
+                <button class="erasorButton" onclick="changeColor('white')">Erasor</button>
+                <button class="grayButton"   onclick="changeColor('gray')">Gray</button>
+                <button class="rainbowButton" onclick="changeColor('rainbow')">Rainbow</button>
+                <button onclick="resetCanva()">Reset</button>
+            </div>
+        </div>    
+        </div>
+      
+    </div>
+    
+
+
+
+
+
+
+</body>
+</html>
+
